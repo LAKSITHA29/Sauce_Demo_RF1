@@ -1,0 +1,44 @@
+==============================================================================
+Sauce Robot framework                                                         
+==============================================================================
+Sauce Robot framework.Tests                                                   
+==============================================================================
+Sauce Robot framework.Tests.CheckoutTest                                      
+==============================================================================
+blank_fname                                                           | PASS |
+------------------------------------------------------------------------------
+blank_lname                                                           | PASS |
+------------------------------------------------------------------------------
+blank_zipcode                                                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Sauce_Robot_framework\Tests\CheckoutTest.robot:17
+    T:  blank_zipcode    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Sauce_Robot_framework\Tests\CheckoutTest.robot:20
+      Invalid checkout with    Firstname=laks    Lastname=ravi    Zipcode=
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Sauce_Robot_framework\Tests\CheckoutTest.robot:22
+      Valid Login    ${valid_uname}    ${valid_pass}
+      |  ${valid_uname} = standard_user (str)
+      |  ${valid_pass} = secret_sauce (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Sauce_Robot_framework\Resources\GenericResources.robot:35
+      Input Text    id=user-name    ${valid_uname}
+      |  ${valid_uname} = standard_user (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'id=user-name' not found.
+------------------------------------------------------------------------------
+valid_checkout                                                        | PASS |
+------------------------------------------------------------------------------
+Sauce Robot framework.Tests.CheckoutTest                              | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Sauce Robot framework.Tests                                           | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Sauce Robot framework                                                 | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Output:  C:\Sauce_Robot_framework\pabot_results\0\output.xml

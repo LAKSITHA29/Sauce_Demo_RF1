@@ -1,0 +1,5 @@
+*** Test Cases ***,${Firstname},${Lastname},${Zipcode}
+blank_fname,,ravi,123
+blank_lname,laks,,123
+blank_zipcode,laks,ravi, 
+valid_checkout,sakthi,ravi,123
