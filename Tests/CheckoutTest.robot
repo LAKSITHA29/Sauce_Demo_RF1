@@ -24,7 +24,7 @@ Invalid checkout with
     Input Text    xpath=//input[@id="first-name"]   ${Firstname}
     Input Text    xpath=//input[@id="last-name"]     ${Lastname}
     Input Text    xpath=//input[@id="postal-code"]   ${Zipcode}
-    Click Button  xpath="//input[@id="continue"]"
+    Click Button  xpath=//input[@id="continue"]
     IF    '${Firstname}' == ''
         Verify the firstname required message
     ELSE IF    '${Lastname}' == ''    
