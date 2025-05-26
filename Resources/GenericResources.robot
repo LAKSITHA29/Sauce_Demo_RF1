@@ -32,8 +32,8 @@ Open the Browser with the URL
 
 Valid Login
     [Arguments]    ${valid_uname}    ${valid_pass}
-    Input Text    id=user-name    ${valid_uname}
-    Input Password    id=password    ${valid_pass}
+    Input Text    //input[@id='user-name']    ${valid_uname}
+    Input Password    //input[@id='password']    ${valid_pass}
     Click Button    ${login_btn}
 
 Close Browser Session 
