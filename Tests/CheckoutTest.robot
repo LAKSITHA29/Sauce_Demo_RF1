@@ -21,10 +21,10 @@ Invalid checkout with
     [Arguments]    ${Firstname}    ${Lastname}    ${Zipcode}
     GenericResources.Valid Login    ${valid_uname}    ${valid_pass}
     Verify the product page opens
-    Input Text    id=first-name    ${Firstname}
-    Input Text    id=last-name     ${Lastname}
-    Input Text    id=postal-code   ${Zipcode}
-    Click Button  id=continue
+    Input Text    xpath=//input[@id="first-name"]   ${Firstname}
+    Input Text    xpath=//input[@id="last-name"]     ${Lastname}
+    Input Text    xpath=//input[@id="postal-code"]   ${Zipcode}
+    Click Button  xpath="//input[@id="continue"]"
     IF    '${Firstname}' == ''
         Verify the firstname required message
     ELSE IF    '${Lastname}' == ''    
@@ -33,4 +33,4 @@ Invalid checkout with
          Verify the zipcode required message
     ELSE
         Verify the success checkout message
-    END
+    END         

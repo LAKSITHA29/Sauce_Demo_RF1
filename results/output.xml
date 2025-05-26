@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-20T22:46:38.049420" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-26T21:26:32.944138" rpa="false" schemaversion="5">
 <suite id="s1" name="Sauce Robot framework" source="C:\Sauce_Robot_framework">
 <suite id="s1-s1" name="Tests" source="C:\Sauce_Robot_framework\Tests">
 <suite id="s1-s1-s1" name="CheckoutTest" source="C:\Sauce_Robot_framework\Tests\CheckoutTest.robot">
 <test id="s1-s1-s1-t1" name="blank_fname" line="17">
 <kw name="Open the Browser with the URL" owner="GenericResources" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-05-20T22:46:38.934832" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000020C39E6DE80&gt;</msg>
+<msg time="2025-05-26T21:26:33.815779" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001E36AA0E120&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-05-20T22:46:38.934133" elapsed="0.000962"/>
+<status status="PASS" start="2025-05-26T21:26:33.815097" elapsed="0.001004"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--incognito</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:38.935371" elapsed="0.000463"/>
+<status status="PASS" start="2025-05-26T21:26:33.816578" elapsed="0.000577"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-extensions</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:38.936084" elapsed="0.000714"/>
+<status status="PASS" start="2025-05-26T21:26:33.817395" elapsed="0.000658"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-notifications</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:38.937172" elapsed="0.000767"/>
+<status status="PASS" start="2025-05-26T21:26:33.818434" elapsed="0.000719"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-popup-blocking</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:38.938258" elapsed="0.000421"/>
+<status status="PASS" start="2025-05-26T21:26:33.819563" elapsed="0.000723"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--start-maximized</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:38.938939" elapsed="0.000354"/>
+<status status="PASS" start="2025-05-26T21:26:33.820674" elapsed="0.000590"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-05-20T22:46:38.939938" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<msg time="2025-05-26T21:26:33.822038" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
 <var>${prefs}</var>
 <arg>{"credentials_enable_service": False, "profile.password_manager_enabled": False}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-05-20T22:46:38.939506" elapsed="0.000647"/>
+<status status="PASS" start="2025-05-26T21:26:33.821524" elapsed="0.000724"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
@@ -61,210 +61,318 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:38.940371" elapsed="0.000488"/>
+<status status="PASS" start="2025-05-26T21:26:33.822481" elapsed="0.000518"/>
 </kw>
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:38.941815" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-05-26T21:26:33.824134" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-05-26T21:31:34.985123" level="WARN">There was an error managing chromedriver (error decoding response body); using driver found in the cache</msg>
 <arg>Chrome</arg>
 <arg>options=${options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-20T22:46:38.941083" elapsed="1.725858"/>
+<status status="PASS" start="2025-05-26T21:26:33.823227" elapsed="304.189207"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:40.668251" level="INFO">Opening url 'https://www.saucedemo.com/inventory.html'</msg>
+<msg time="2025-05-26T21:31:38.014560" level="INFO">Opening url 'https://www.saucedemo.com/inventory.html'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-20T22:46:40.667491" elapsed="1.370209"/>
+<status status="PASS" start="2025-05-26T21:31:38.013093" elapsed="3.217441"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:46:38.932458" elapsed="3.106009"/>
+<status status="PASS" start="2025-05-26T21:26:33.813737" elapsed="307.417416"/>
 </kw>
 <kw name="Invalid checkout with">
 <kw name="Valid Login" owner="GenericResources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:42.062290" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2025-05-26T21:31:41.241803" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${valid_uname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:42.056679" elapsed="0.282787"/>
+<status status="PASS" start="2025-05-26T21:31:41.240078" elapsed="0.707586"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:42.341737" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2025-05-20T22:46:42.393799" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-05-26T21:31:41.949831" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-05-26T21:31:42.068786" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=password</arg>
 <arg>${valid_pass}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:42.340413" elapsed="0.155028"/>
+<status status="PASS" start="2025-05-26T21:31:41.948415" elapsed="0.242725"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:42.496292" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2025-05-26T21:31:42.193128" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>${login_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:42.495772" elapsed="0.171612"/>
+<status status="PASS" start="2025-05-26T21:31:42.191676" elapsed="0.234332"/>
 </kw>
 <arg>${valid_uname}</arg>
 <arg>${valid_pass}</arg>
-<status status="PASS" start="2025-05-20T22:46:42.050468" elapsed="0.617342"/>
+<status status="PASS" start="2025-05-26T21:31:41.238330" elapsed="1.188765"/>
 </kw>
 <kw name="Verify the product page opens" owner="CheckoutResources">
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:42.714408" level="INFO">Element 'xpath=//div[text()='Sauce Labs Backpack']' contains text 'Sauce Labs Backpack'.</msg>
+<msg time="2025-05-26T21:31:42.515847" level="INFO">Element 'xpath=//div[text()='Sauce Labs Backpack']' contains text 'Sauce Labs Backpack'.</msg>
 <arg>${sauce_lab_bag}</arg>
 <arg>Sauce Labs Backpack</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-05-20T22:46:42.669669" elapsed="0.045187"/>
+<status status="PASS" start="2025-05-26T21:31:42.429476" elapsed="0.086827"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:42.715738" level="INFO">Clicking button 'xpath=//button[@id='add-to-cart-sauce-labs-backpack']'.</msg>
+<msg time="2025-05-26T21:31:42.517823" level="INFO">Clicking button 'xpath=//button[@id='add-to-cart-sauce-labs-backpack']'.</msg>
 <arg>xpath=//button[@id='add-to-cart-sauce-labs-backpack']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:42.715139" elapsed="0.143022"/>
+<status status="PASS" start="2025-05-26T21:31:42.517029" elapsed="0.171488"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:42.859583" level="INFO">Clicking element 'class=shopping_cart_link'.</msg>
+<msg time="2025-05-26T21:31:42.689440" level="INFO">Clicking element 'class=shopping_cart_link'.</msg>
 <arg>class=shopping_cart_link</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:42.858774" elapsed="0.107933"/>
+<status status="PASS" start="2025-05-26T21:31:42.688894" elapsed="0.098148"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-20T22:46:47.968333" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-05-26T21:31:44.788976" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-20T22:46:42.967209" elapsed="5.002027"/>
+<status status="PASS" start="2025-05-26T21:31:42.787594" elapsed="2.002110"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:47.971842" level="INFO">Clicking button 'id=checkout'.</msg>
+<msg time="2025-05-26T21:31:44.791372" level="INFO">Clicking button 'id=checkout'.</msg>
 <arg>id=checkout</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:47.970045" elapsed="0.194104"/>
+<status status="PASS" start="2025-05-26T21:31:44.790226" elapsed="0.252276"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:46:42.668417" elapsed="5.495990"/>
+<status status="PASS" start="2025-05-26T21:31:42.428052" elapsed="2.615020"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:48.165664" level="INFO">Typing text '' into text field 'id=first-name'.</msg>
-<arg>id=first-name</arg>
+<msg time="2025-05-26T21:31:45.046055" level="INFO">Typing text '' into text field 'xpath=//input[@id="first-name"]'.</msg>
+<arg>xpath=//input[@id="first-name"]</arg>
 <arg>${Firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:48.164783" elapsed="0.125481"/>
+<status status="PASS" start="2025-05-26T21:31:45.045098" elapsed="0.132478"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:48.291293" level="INFO">Typing text 'ravi' into text field 'id=last-name'.</msg>
-<arg>id=last-name</arg>
+<msg time="2025-05-26T21:31:45.178725" level="INFO">Typing text 'ravi' into text field 'xpath=//input[@id="last-name"]'.</msg>
+<arg>xpath=//input[@id="last-name"]</arg>
 <arg>${Lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:48.290766" elapsed="0.195728"/>
+<status status="PASS" start="2025-05-26T21:31:45.177941" elapsed="0.315464"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:48.487584" level="INFO">Typing text '123' into text field 'id=postal-code'.</msg>
-<arg>id=postal-code</arg>
+<msg time="2025-05-26T21:31:45.495088" level="INFO">Typing text '123' into text field 'xpath=//input[@id="postal-code"]'.</msg>
+<arg>xpath=//input[@id="postal-code"]</arg>
 <arg>${Zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:48.486812" elapsed="0.153530"/>
+<status status="PASS" start="2025-05-26T21:31:45.494098" elapsed="1.104917"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:48.642402" level="INFO">Clicking button 'id=continue'.</msg>
-<arg>id=continue</arg>
+<msg time="2025-05-26T21:31:46.600380" level="INFO">Clicking button 'xpath="//input[@id="continue"]"'.</msg>
+<msg time="2025-05-26T21:31:47.262978" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-26T21:31:47.263814" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF73174CF65+75717]
+	GetHandleVerifier [0x00007FF73174CFC0+75808]
+	(No symbol) [0x00007FF731518F9A]
+	(No symbol) [0x00007FF731520998]
+	(No symbol) [0x00007FF731523A0C]
+	(No symbol) [0x00007FF731523ADF]
+	(No symbol) [0x00007FF73156ED77]
+	(No symbol) [0x00007FF73156F77C]
+	(No symbol) [0x00007FF7315C25A7]
+	(No symbol) [0x00007FF7315973BF]
+	(No symbol) [0x00007FF7315BF39C]
+	(No symbol) [0x00007FF731597153]
+	(No symbol) [0x00007FF731560421]
+	(No symbol) [0x00007FF7315611B3]
+	GetHandleVerifier [0x00007FF731A4D74D+3223469]
+	GetHandleVerifier [0x00007FF731A47CF2+3200338]
+	GetHandleVerifier [0x00007FF731A65B23+3322755]
+	GetHandleVerifier [0x00007FF731766A3A+180890]
+	GetHandleVerifier [0x00007FF73176E13F+211359]
+	GetHandleVerifier [0x00007FF7317552B4+109332]
+	GetHandleVerifier [0x00007FF731755462+109762]
+	GetHandleVerifier [0x00007FF73173BA79+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</msg>
+<arg>xpath="//input[@id="continue"]"</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:48.641426" elapsed="0.152717"/>
+<status status="FAIL" start="2025-05-26T21:31:46.599592" elapsed="0.678384">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF73174CF65+75717]
+	GetHandleVerifier [0x00007FF73174CFC0+75808]
+	(No symbol) [0x00007FF731518F9A]
+	(No symbol) [0x00007FF731520998]
+	(No symbol) [0x00007FF731523A0C]
+	(No symbol) [0x00007FF731523ADF]
+	(No symbol) [0x00007FF73156ED77]
+	(No symbol) [0x00007FF73156F77C]
+	(No symbol) [0x00007FF7315C25A7]
+	(No symbol) [0x00007FF7315973BF]
+	(No symbol) [0x00007FF7315BF39C]
+	(No symbol) [0x00007FF731597153]
+	(No symbol) [0x00007FF731560421]
+	(No symbol) [0x00007FF7315611B3]
+	GetHandleVerifier [0x00007FF731A4D74D+3223469]
+	GetHandleVerifier [0x00007FF731A47CF2+3200338]
+	GetHandleVerifier [0x00007FF731A65B23+3322755]
+	GetHandleVerifier [0x00007FF731766A3A+180890]
+	GetHandleVerifier [0x00007FF73176E13F+211359]
+	GetHandleVerifier [0x00007FF7317552B4+109332]
+	GetHandleVerifier [0x00007FF731755462+109762]
+	GetHandleVerifier [0x00007FF73173BA79+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
 </kw>
 <if>
 <branch type="IF" condition="'${Firstname}' == ''">
 <kw name="Verify the firstname required message" owner="CheckoutResources">
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:48.798583" level="INFO">Verifying element 'xpath=//h3[@data-test='error']' contains exact text 'Error: First Name is required'.</msg>
-<arg>${fname_error}</arg>
-<arg>Error: First Name is required</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-20T22:46:48.796611" elapsed="0.036801"/>
+<status status="NOT RUN" start="2025-05-26T21:31:47.279273" elapsed="0.000405"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:46:48.795574" elapsed="0.038078"/>
-</kw>
-<status status="PASS" start="2025-05-20T22:46:48.794535" elapsed="0.039404"/>
+<status status="NOT RUN" start="2025-05-26T21:31:47.278572" elapsed="0.001347"/>
 </branch>
 <branch type="ELSE IF" condition="'${Lastname}' == ''">
 <kw name="Verify the lastname required message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:46:48.834837" elapsed="0.000334"/>
+<status status="NOT RUN" start="2025-05-26T21:31:47.282064" elapsed="0.000627"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:46:48.834154" elapsed="0.001131"/>
+<status status="NOT RUN" start="2025-05-26T21:31:47.280105" elapsed="0.002863"/>
 </branch>
 <branch type="ELSE IF" condition="'${Zipcode}' == ''">
 <kw name="Verify the zipcode required message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:46:48.835647" elapsed="0.000194"/>
+<status status="NOT RUN" start="2025-05-26T21:31:47.284299" elapsed="0.000412"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:46:48.835364" elapsed="0.000612"/>
+<status status="NOT RUN" start="2025-05-26T21:31:47.283324" elapsed="0.001634"/>
 </branch>
 <branch type="ELSE">
 <kw name="Verify the success checkout message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:46:48.836844" elapsed="0.000380"/>
+<status status="NOT RUN" start="2025-05-26T21:31:47.285838" elapsed="0.000475"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:46:48.836283" elapsed="0.001148"/>
+<status status="NOT RUN" start="2025-05-26T21:31:47.285121" elapsed="0.002007"/>
 </branch>
-<status status="PASS" start="2025-05-20T22:46:48.794468" elapsed="0.043092"/>
+<status status="NOT RUN" start="2025-05-26T21:31:47.278477" elapsed="0.008986"/>
 </if>
 <arg>Firstname=</arg>
 <arg>Lastname=ravi</arg>
 <arg>Zipcode=123</arg>
-<status status="PASS" start="2025-05-20T22:46:42.041181" elapsed="6.796534"/>
+<status status="FAIL" start="2025-05-26T21:31:41.236242" elapsed="6.051706">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF73174CF65+75717]
+	GetHandleVerifier [0x00007FF73174CFC0+75808]
+	(No symbol) [0x00007FF731518F9A]
+	(No symbol) [0x00007FF731520998]
+	(No symbol) [0x00007FF731523A0C]
+	(No symbol) [0x00007FF731523ADF]
+	(No symbol) [0x00007FF73156ED77]
+	(No symbol) [0x00007FF73156F77C]
+	(No symbol) [0x00007FF7315C25A7]
+	(No symbol) [0x00007FF7315973BF]
+	(No symbol) [0x00007FF7315BF39C]
+	(No symbol) [0x00007FF731597153]
+	(No symbol) [0x00007FF731560421]
+	(No symbol) [0x00007FF7315611B3]
+	GetHandleVerifier [0x00007FF731A4D74D+3223469]
+	GetHandleVerifier [0x00007FF731A47CF2+3200338]
+	GetHandleVerifier [0x00007FF731A65B23+3322755]
+	GetHandleVerifier [0x00007FF731766A3A+180890]
+	GetHandleVerifier [0x00007FF73176E13F+211359]
+	GetHandleVerifier [0x00007FF7317552B4+109332]
+	GetHandleVerifier [0x00007FF731755462+109762]
+	GetHandleVerifier [0x00007FF73173BA79+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
 </kw>
 <kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-20T22:46:48.839736" elapsed="2.382923"/>
+<status status="PASS" start="2025-05-26T21:31:47.307797" elapsed="3.514268"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:46:48.838801" elapsed="2.384635"/>
+<status status="PASS" start="2025-05-26T21:31:47.306319" elapsed="3.516989"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:46:38.927195" elapsed="12.297411"/>
+<status status="FAIL" start="2025-05-26T21:26:33.809583" elapsed="317.017047">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF73174CF65+75717]
+	GetHandleVerifier [0x00007FF73174CFC0+75808]
+	(No symbol) [0x00007FF731518F9A]
+	(No symbol) [0x00007FF731520998]
+	(No symbol) [0x00007FF731523A0C]
+	(No symbol) [0x00007FF731523ADF]
+	(No symbol) [0x00007FF73156ED77]
+	(No symbol) [0x00007FF73156F77C]
+	(No symbol) [0x00007FF7315C25A7]
+	(No symbol) [0x00007FF7315973BF]
+	(No symbol) [0x00007FF7315BF39C]
+	(No symbol) [0x00007FF731597153]
+	(No symbol) [0x00007FF731560421]
+	(No symbol) [0x00007FF7315611B3]
+	GetHandleVerifier [0x00007FF731A4D74D+3223469]
+	GetHandleVerifier [0x00007FF731A47CF2+3200338]
+	GetHandleVerifier [0x00007FF731A65B23+3322755]
+	GetHandleVerifier [0x00007FF731766A3A+180890]
+	GetHandleVerifier [0x00007FF73176E13F+211359]
+	GetHandleVerifier [0x00007FF7317552B4+109332]
+	GetHandleVerifier [0x00007FF731755462+109762]
+	GetHandleVerifier [0x00007FF73173BA79+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
 </test>
 <test id="s1-s1-s1-t2" name="blank_lname" line="17">
 <kw name="Open the Browser with the URL" owner="GenericResources" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-05-20T22:46:51.236535" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000020C39D5B750&gt;</msg>
+<msg time="2025-05-26T21:31:50.869615" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001E36AA4CCD0&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-05-20T22:46:51.235783" elapsed="0.001039"/>
+<status status="PASS" start="2025-05-26T21:31:50.868012" elapsed="0.001916"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--incognito</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:51.237172" elapsed="0.000706"/>
+<status status="PASS" start="2025-05-26T21:31:50.870264" elapsed="0.000752"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-extensions</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:51.238262" elapsed="0.000755"/>
+<status status="PASS" start="2025-05-26T21:31:50.871460" elapsed="0.001076"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-notifications</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:51.239498" elapsed="0.000667"/>
+<status status="PASS" start="2025-05-26T21:31:50.873079" elapsed="0.000782"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-popup-blocking</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:51.240407" elapsed="0.000468"/>
+<status status="PASS" start="2025-05-26T21:31:50.874329" elapsed="0.000549"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--start-maximized</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:51.241093" elapsed="0.000381"/>
+<status status="PASS" start="2025-05-26T21:31:50.875133" elapsed="0.000395"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-05-20T22:46:51.242172" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<msg time="2025-05-26T21:31:50.876255" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
 <var>${prefs}</var>
 <arg>{"credentials_enable_service": False, "profile.password_manager_enabled": False}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-05-20T22:46:51.241695" elapsed="0.001278"/>
+<status status="PASS" start="2025-05-26T21:31:50.875765" elapsed="0.000924"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
@@ -272,210 +380,317 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:46:51.243400" elapsed="0.000769"/>
+<status status="PASS" start="2025-05-26T21:31:50.877185" elapsed="0.000880"/>
 </kw>
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:51.245258" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-05-26T21:31:50.879617" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
 <arg>Chrome</arg>
 <arg>options=${options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-20T22:46:51.244591" elapsed="1.712504"/>
+<status status="PASS" start="2025-05-26T21:31:50.878639" elapsed="2.951346"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:52.958890" level="INFO">Opening url 'https://www.saucedemo.com/inventory.html'</msg>
+<msg time="2025-05-26T21:31:53.831506" level="INFO">Opening url 'https://www.saucedemo.com/inventory.html'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-20T22:46:52.958051" elapsed="0.215305"/>
+<status status="PASS" start="2025-05-26T21:31:53.830588" elapsed="3.555367"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:46:51.234876" elapsed="1.938979"/>
+<status status="PASS" start="2025-05-26T21:31:50.866400" elapsed="6.521523"/>
 </kw>
 <kw name="Invalid checkout with">
 <kw name="Valid Login" owner="GenericResources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:53.191889" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2025-05-26T21:31:57.400968" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${valid_uname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:53.190733" elapsed="0.716498"/>
+<status status="PASS" start="2025-05-26T21:31:57.399785" elapsed="0.231533"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:53.908784" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2025-05-20T22:46:53.989419" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-05-26T21:31:57.632996" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-05-26T21:31:57.718115" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=password</arg>
 <arg>${valid_pass}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:53.907806" elapsed="0.186494"/>
+<status status="PASS" start="2025-05-26T21:31:57.631988" elapsed="0.208565"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:54.095196" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2025-05-26T21:31:57.843527" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>${login_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:54.094655" elapsed="0.190595"/>
+<status status="PASS" start="2025-05-26T21:31:57.841254" elapsed="0.532884"/>
 </kw>
 <arg>${valid_uname}</arg>
 <arg>${valid_pass}</arg>
-<status status="PASS" start="2025-05-20T22:46:53.189181" elapsed="1.096427"/>
+<status status="PASS" start="2025-05-26T21:31:57.395598" elapsed="0.979006"/>
 </kw>
 <kw name="Verify the product page opens" owner="CheckoutResources">
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:54.329815" level="INFO">Element 'xpath=//div[text()='Sauce Labs Backpack']' contains text 'Sauce Labs Backpack'.</msg>
+<msg time="2025-05-26T21:31:58.940096" level="INFO">Element 'xpath=//div[text()='Sauce Labs Backpack']' contains text 'Sauce Labs Backpack'.</msg>
 <arg>${sauce_lab_bag}</arg>
 <arg>Sauce Labs Backpack</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-05-20T22:46:54.287161" elapsed="0.043174"/>
+<status status="PASS" start="2025-05-26T21:31:58.376878" elapsed="0.563924"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:54.332027" level="INFO">Clicking button 'xpath=//button[@id='add-to-cart-sauce-labs-backpack']'.</msg>
+<msg time="2025-05-26T21:31:58.942158" level="INFO">Clicking button 'xpath=//button[@id='add-to-cart-sauce-labs-backpack']'.</msg>
 <arg>xpath=//button[@id='add-to-cart-sauce-labs-backpack']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:54.331176" elapsed="0.126798"/>
+<status status="PASS" start="2025-05-26T21:31:58.941264" elapsed="0.279250"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:54.459119" level="INFO">Clicking element 'class=shopping_cart_link'.</msg>
+<msg time="2025-05-26T21:31:59.221937" level="INFO">Clicking element 'class=shopping_cart_link'.</msg>
 <arg>class=shopping_cart_link</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:54.458428" elapsed="0.108850"/>
+<status status="PASS" start="2025-05-26T21:31:59.221119" elapsed="0.241179"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-20T22:46:59.569332" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-05-26T21:32:01.464240" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-20T22:46:54.567751" elapsed="5.002888"/>
+<status status="PASS" start="2025-05-26T21:31:59.462818" elapsed="2.003213"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:59.573339" level="INFO">Clicking button 'id=checkout'.</msg>
+<msg time="2025-05-26T21:32:01.472172" level="INFO">Clicking button 'id=checkout'.</msg>
 <arg>id=checkout</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:59.571560" elapsed="0.185395"/>
+<status status="PASS" start="2025-05-26T21:32:01.467720" elapsed="0.294133"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:46:54.286100" elapsed="5.471214"/>
+<status status="PASS" start="2025-05-26T21:31:58.375238" elapsed="3.387162"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:59.758387" level="INFO">Typing text 'laks' into text field 'id=first-name'.</msg>
-<arg>id=first-name</arg>
+<msg time="2025-05-26T21:32:01.766320" level="INFO">Typing text 'laks' into text field 'xpath=//input[@id="first-name"]'.</msg>
+<arg>xpath=//input[@id="first-name"]</arg>
 <arg>${Firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:59.757636" elapsed="0.180637"/>
+<status status="PASS" start="2025-05-26T21:32:01.763334" elapsed="0.162135"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:46:59.939465" level="INFO">Typing text '' into text field 'id=last-name'.</msg>
-<arg>id=last-name</arg>
+<msg time="2025-05-26T21:32:01.926899" level="INFO">Typing text '' into text field 'xpath=//input[@id="last-name"]'.</msg>
+<arg>xpath=//input[@id="last-name"]</arg>
 <arg>${Lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:46:59.938667" elapsed="0.133007"/>
+<status status="PASS" start="2025-05-26T21:32:01.925916" elapsed="0.116959"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:00.073167" level="INFO">Typing text '123' into text field 'id=postal-code'.</msg>
-<arg>id=postal-code</arg>
+<msg time="2025-05-26T21:32:02.044316" level="INFO">Typing text '123' into text field 'xpath=//input[@id="postal-code"]'.</msg>
+<arg>xpath=//input[@id="postal-code"]</arg>
 <arg>${Zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:00.072343" elapsed="0.135059"/>
+<status status="PASS" start="2025-05-26T21:32:02.043373" elapsed="0.148475"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:00.209652" level="INFO">Clicking button 'id=continue'.</msg>
-<arg>id=continue</arg>
+<msg time="2025-05-26T21:32:02.193292" level="INFO">Clicking button 'xpath="//input[@id="continue"]"'.</msg>
+<msg time="2025-05-26T21:32:02.550690" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-26T21:32:02.551481" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67168CF45+75717]
+	GetHandleVerifier [0x00007FF67168CFA0+75808]
+	(No symbol) [0x00007FF671458F9A]
+	(No symbol) [0x00007FF671460998]
+	(No symbol) [0x00007FF671463A0C]
+	(No symbol) [0x00007FF671463ADF]
+	(No symbol) [0x00007FF6714AED77]
+	(No symbol) [0x00007FF6714AF77C]
+	(No symbol) [0x00007FF6715025A7]
+	(No symbol) [0x00007FF6714D73BF]
+	(No symbol) [0x00007FF6714FF39C]
+	(No symbol) [0x00007FF6714D7153]
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</msg>
+<arg>xpath="//input[@id="continue"]"</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:00.208572" elapsed="0.118580"/>
+<status status="FAIL" start="2025-05-26T21:32:02.192402" elapsed="0.367166">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67168CF45+75717]
+	GetHandleVerifier [0x00007FF67168CFA0+75808]
+	(No symbol) [0x00007FF671458F9A]
+	(No symbol) [0x00007FF671460998]
+	(No symbol) [0x00007FF671463A0C]
+	(No symbol) [0x00007FF671463ADF]
+	(No symbol) [0x00007FF6714AED77]
+	(No symbol) [0x00007FF6714AF77C]
+	(No symbol) [0x00007FF6715025A7]
+	(No symbol) [0x00007FF6714D73BF]
+	(No symbol) [0x00007FF6714FF39C]
+	(No symbol) [0x00007FF6714D7153]
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
 </kw>
 <if>
 <branch type="IF" condition="'${Firstname}' == ''">
 <kw name="Verify the firstname required message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:47:00.328241" elapsed="0.000365"/>
+<status status="NOT RUN" start="2025-05-26T21:32:02.560683" elapsed="0.000382"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:47:00.327540" elapsed="0.001314"/>
+<status status="NOT RUN" start="2025-05-26T21:32:02.560067" elapsed="0.001206"/>
 </branch>
 <branch type="ELSE IF" condition="'${Lastname}' == ''">
 <kw name="Verify the lastname required message" owner="CheckoutResources">
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:00.332991" level="INFO">Verifying element 'xpath=//h3[@data-test='error']' contains exact text 'Error: Last Name is required'.</msg>
-<arg>${lname_error}</arg>
-<arg>Error: Last Name is required</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-20T22:47:00.332228" elapsed="0.036535"/>
+<status status="NOT RUN" start="2025-05-26T21:32:02.561934" elapsed="0.000362"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:47:00.330037" elapsed="0.039004"/>
-</kw>
-<status status="PASS" start="2025-05-20T22:47:00.329050" elapsed="0.040167"/>
+<status status="NOT RUN" start="2025-05-26T21:32:02.561413" elapsed="0.001084"/>
 </branch>
 <branch type="ELSE IF" condition="'${Zipcode}' == ''">
 <kw name="Verify the zipcode required message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:47:00.369808" elapsed="0.000254"/>
+<status status="NOT RUN" start="2025-05-26T21:32:02.563123" elapsed="0.000355"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:47:00.369367" elapsed="0.000898"/>
+<status status="NOT RUN" start="2025-05-26T21:32:02.562630" elapsed="0.001050"/>
 </branch>
 <branch type="ELSE">
 <kw name="Verify the success checkout message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:47:00.371078" elapsed="0.000381"/>
+<status status="NOT RUN" start="2025-05-26T21:32:02.564308" elapsed="0.000361"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:47:00.370421" elapsed="0.001329"/>
+<status status="NOT RUN" start="2025-05-26T21:32:02.563824" elapsed="0.001341"/>
 </branch>
-<status status="PASS" start="2025-05-20T22:47:00.327462" elapsed="0.044443"/>
+<status status="NOT RUN" start="2025-05-26T21:32:02.559990" elapsed="0.005493"/>
 </if>
 <arg>Firstname=laks</arg>
 <arg>Lastname=</arg>
 <arg>Zipcode=123</arg>
-<status status="PASS" start="2025-05-20T22:46:53.187113" elapsed="7.184969"/>
+<status status="FAIL" start="2025-05-26T21:31:57.390845" elapsed="5.175106">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67168CF45+75717]
+	GetHandleVerifier [0x00007FF67168CFA0+75808]
+	(No symbol) [0x00007FF671458F9A]
+	(No symbol) [0x00007FF671460998]
+	(No symbol) [0x00007FF671463A0C]
+	(No symbol) [0x00007FF671463ADF]
+	(No symbol) [0x00007FF6714AED77]
+	(No symbol) [0x00007FF6714AF77C]
+	(No symbol) [0x00007FF6715025A7]
+	(No symbol) [0x00007FF6714D73BF]
+	(No symbol) [0x00007FF6714FF39C]
+	(No symbol) [0x00007FF6714D7153]
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
 </kw>
 <kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-20T22:47:00.373982" elapsed="3.288073"/>
+<status status="PASS" start="2025-05-26T21:32:02.568319" elapsed="2.532061"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:47:00.373127" elapsed="3.289498"/>
+<status status="PASS" start="2025-05-26T21:32:02.567245" elapsed="2.533570"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:46:51.229182" elapsed="12.433947"/>
+<status status="FAIL" start="2025-05-26T21:31:50.859865" elapsed="14.241685">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67168CF45+75717]
+	GetHandleVerifier [0x00007FF67168CFA0+75808]
+	(No symbol) [0x00007FF671458F9A]
+	(No symbol) [0x00007FF671460998]
+	(No symbol) [0x00007FF671463A0C]
+	(No symbol) [0x00007FF671463ADF]
+	(No symbol) [0x00007FF6714AED77]
+	(No symbol) [0x00007FF6714AF77C]
+	(No symbol) [0x00007FF6715025A7]
+	(No symbol) [0x00007FF6714D73BF]
+	(No symbol) [0x00007FF6714FF39C]
+	(No symbol) [0x00007FF6714D7153]
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
 </test>
 <test id="s1-s1-s1-t3" name="blank_zipcode" line="17">
 <kw name="Open the Browser with the URL" owner="GenericResources" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-05-20T22:47:03.670909" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000020C39D5BB10&gt;</msg>
+<msg time="2025-05-26T21:32:05.160098" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001E36AA4DF90&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-05-20T22:47:03.669965" elapsed="0.001339"/>
+<status status="PASS" start="2025-05-26T21:32:05.158773" elapsed="0.001867"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--incognito</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:03.671851" elapsed="0.000735"/>
+<status status="PASS" start="2025-05-26T21:32:05.161105" elapsed="0.002344"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-extensions</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:03.672991" elapsed="0.000658"/>
+<status status="PASS" start="2025-05-26T21:32:05.165018" elapsed="0.004211"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-notifications</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:03.674020" elapsed="0.000844"/>
+<status status="PASS" start="2025-05-26T21:32:05.169956" elapsed="0.000830"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-popup-blocking</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:03.675378" elapsed="0.000805"/>
+<status status="PASS" start="2025-05-26T21:32:05.171074" elapsed="0.000451"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--start-maximized</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:03.676659" elapsed="0.000799"/>
+<status status="PASS" start="2025-05-26T21:32:05.171766" elapsed="0.000565"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-05-20T22:47:03.678867" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<msg time="2025-05-26T21:32:05.173556" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
 <var>${prefs}</var>
 <arg>{"credentials_enable_service": False, "profile.password_manager_enabled": False}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-05-20T22:47:03.678013" elapsed="0.001285"/>
+<status status="PASS" start="2025-05-26T21:32:05.172789" elapsed="0.001093"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
@@ -483,210 +698,167 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:03.679702" elapsed="0.000816"/>
+<status status="PASS" start="2025-05-26T21:32:05.174341" elapsed="0.001017"/>
 </kw>
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:03.682004" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-05-26T21:32:05.176861" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
 <arg>Chrome</arg>
 <arg>options=${options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-20T22:47:03.681122" elapsed="1.849220"/>
+<status status="PASS" start="2025-05-26T21:32:05.175818" elapsed="1.832339"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:05.531856" level="INFO">Opening url 'https://www.saucedemo.com/inventory.html'</msg>
+<msg time="2025-05-26T21:32:07.009710" level="INFO">Opening url 'https://www.saucedemo.com/inventory.html'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-20T22:47:05.530938" elapsed="2.912909"/>
+<status status="PASS" start="2025-05-26T21:32:07.008799" elapsed="0.753148"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:47:03.669317" elapsed="4.774995"/>
+<status status="PASS" start="2025-05-26T21:32:05.157203" elapsed="2.605283"/>
 </kw>
 <kw name="Invalid checkout with">
 <kw name="Valid Login" owner="GenericResources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:08.461939" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2025-05-26T21:32:07.768249" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2025-05-26T21:32:08.081087" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-26T21:32:08.081786" level="FAIL">Element with locator 'id=user-name' not found.</msg>
 <arg>id=user-name</arg>
 <arg>${valid_uname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:08.460988" elapsed="1.542296"/>
+<status status="FAIL" start="2025-05-26T21:32:07.767153" elapsed="0.320613">Element with locator 'id=user-name' not found.</status>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:10.004873" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2025-05-20T22:47:10.069372" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=password</arg>
 <arg>${valid_pass}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:10.003912" elapsed="0.192927"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.088346" elapsed="0.000435"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:10.198267" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>${login_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:10.197388" elapsed="0.202060"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.089226" elapsed="0.000363"/>
 </kw>
 <arg>${valid_uname}</arg>
 <arg>${valid_pass}</arg>
-<status status="PASS" start="2025-05-20T22:47:08.459619" elapsed="1.940214"/>
+<status status="FAIL" start="2025-05-26T21:32:07.765653" elapsed="0.324410">Element with locator 'id=user-name' not found.</status>
 </kw>
 <kw name="Verify the product page opens" owner="CheckoutResources">
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:10.457320" level="INFO">Element 'xpath=//div[text()='Sauce Labs Backpack']' contains text 'Sauce Labs Backpack'.</msg>
-<arg>${sauce_lab_bag}</arg>
-<arg>Sauce Labs Backpack</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-05-20T22:47:10.401708" elapsed="0.056046"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:10.459382" level="INFO">Clicking button 'xpath=//button[@id='add-to-cart-sauce-labs-backpack']'.</msg>
-<arg>xpath=//button[@id='add-to-cart-sauce-labs-backpack']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:10.458254" elapsed="0.128606"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:10.588217" level="INFO">Clicking element 'class=shopping_cart_link'.</msg>
-<arg>class=shopping_cart_link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:10.587387" elapsed="0.112162"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-20T22:47:15.701058" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-20T22:47:10.699902" elapsed="5.002359"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:15.705278" level="INFO">Clicking button 'id=checkout'.</msg>
-<arg>id=checkout</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:15.703181" elapsed="0.217665"/>
-</kw>
-<status status="PASS" start="2025-05-20T22:47:10.400381" elapsed="5.520755"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.090630" elapsed="0.000564"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:15.922541" level="INFO">Typing text 'laks' into text field 'id=first-name'.</msg>
-<arg>id=first-name</arg>
+<arg>xpath=//input[@id="first-name"]</arg>
 <arg>${Firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:15.921499" elapsed="0.173000"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.091670" elapsed="0.000440"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:16.095785" level="INFO">Typing text 'ravi' into text field 'id=last-name'.</msg>
-<arg>id=last-name</arg>
+<arg>xpath=//input[@id="last-name"]</arg>
 <arg>${Lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:16.094986" elapsed="0.158501"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.092568" elapsed="0.000395"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:16.256953" level="INFO">Typing text '' into text field 'id=postal-code'.</msg>
-<arg>id=postal-code</arg>
+<arg>xpath=//input[@id="postal-code"]</arg>
 <arg>${Zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:16.254551" elapsed="0.141768"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.093457" elapsed="0.000457"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:16.397551" level="INFO">Clicking button 'id=continue'.</msg>
-<arg>id=continue</arg>
+<arg>xpath="//input[@id="continue"]"</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:16.396783" elapsed="0.196449"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.094243" elapsed="0.000285"/>
 </kw>
 <if>
 <branch type="IF" condition="'${Firstname}' == ''">
 <kw name="Verify the firstname required message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:47:16.594592" elapsed="0.000467"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.095261" elapsed="0.000492"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:47:16.593735" elapsed="0.001672"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.094769" elapsed="0.002183"/>
 </branch>
 <branch type="ELSE IF" condition="'${Lastname}' == ''">
 <kw name="Verify the lastname required message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:47:16.597344" elapsed="0.001200"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.097977" elapsed="0.000981"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:47:16.595590" elapsed="0.003121"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.097320" elapsed="0.002102"/>
 </branch>
 <branch type="ELSE IF" condition="'${Zipcode}' == ''">
 <kw name="Verify the zipcode required message" owner="CheckoutResources">
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:16.600798" level="INFO">Verifying element 'xpath=//h3[@data-test='error']' contains exact text 'Error: Postal Code is required'.</msg>
-<arg>${zipcode_error}</arg>
-<arg>Error: Postal Code is required</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-20T22:47:16.600245" elapsed="0.042256"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.101642" elapsed="0.001050"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:47:16.599451" elapsed="0.043455"/>
-</kw>
-<status status="PASS" start="2025-05-20T22:47:16.598800" elapsed="0.044384"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.099860" elapsed="0.003140"/>
 </branch>
 <branch type="ELSE">
 <kw name="Verify the success checkout message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:47:16.644053" elapsed="0.000418"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.104047" elapsed="0.000494"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:47:16.643378" elapsed="0.001347"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.103156" elapsed="0.001734"/>
 </branch>
-<status status="PASS" start="2025-05-20T22:47:16.593661" elapsed="0.051237"/>
+<status status="NOT RUN" start="2025-05-26T21:32:08.094720" elapsed="0.010331"/>
 </if>
 <arg>Firstname=laks</arg>
 <arg>Lastname=ravi</arg>
-<arg>Zipcode=</arg>
-<status status="PASS" start="2025-05-20T22:47:08.457989" elapsed="8.187117"/>
+<arg>Zipcode= </arg>
+<status status="FAIL" start="2025-05-26T21:32:07.764094" elapsed="0.341278">Element with locator 'id=user-name' not found.</status>
 </kw>
 <kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-20T22:47:16.647256" elapsed="3.997274"/>
+<status status="PASS" start="2025-05-26T21:32:08.107855" elapsed="2.290883"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:47:16.646096" elapsed="3.999166"/>
+<status status="PASS" start="2025-05-26T21:32:08.106781" elapsed="2.292699"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:47:03.665234" elapsed="16.981029"/>
+<status status="FAIL" start="2025-05-26T21:32:05.144932" elapsed="5.255373">Element with locator 'id=user-name' not found.</status>
 </test>
 <test id="s1-s1-s1-t4" name="valid_checkout" line="17">
 <kw name="Open the Browser with the URL" owner="GenericResources" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-05-20T22:47:20.664953" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000020C39DE3BB0&gt;</msg>
+<msg time="2025-05-26T21:32:10.409611" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001E36AAF0050&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-05-20T22:47:20.663215" elapsed="0.002707"/>
+<status status="PASS" start="2025-05-26T21:32:10.408924" elapsed="0.000913"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--incognito</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:20.666769" elapsed="0.002497"/>
+<status status="PASS" start="2025-05-26T21:32:10.410558" elapsed="0.001022"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-extensions</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:20.670647" elapsed="0.002131"/>
+<status status="PASS" start="2025-05-26T21:32:10.411946" elapsed="0.000978"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-notifications</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:20.674013" elapsed="0.001881"/>
+<status status="PASS" start="2025-05-26T21:32:10.413363" elapsed="0.000851"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-popup-blocking</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:20.677229" elapsed="0.001444"/>
+<status status="PASS" start="2025-05-26T21:32:10.414692" elapsed="0.000900"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--start-maximized</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:20.679285" elapsed="0.000832"/>
+<status status="PASS" start="2025-05-26T21:32:10.416120" elapsed="0.000782"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-05-20T22:47:20.681555" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<msg time="2025-05-26T21:32:10.417888" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
 <var>${prefs}</var>
 <arg>{"credentials_enable_service": False, "profile.password_manager_enabled": False}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-05-20T22:47:20.680598" elapsed="0.001554"/>
+<status status="PASS" start="2025-05-26T21:32:10.417212" elapsed="0.000963"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
@@ -694,175 +866,447 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-05-20T22:47:20.683060" elapsed="0.002180"/>
+<status status="PASS" start="2025-05-26T21:32:10.418654" elapsed="0.000664"/>
 </kw>
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:20.688966" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-05-26T21:32:10.420364" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
 <arg>Chrome</arg>
 <arg>options=${options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-20T22:47:20.686538" elapsed="1.719431"/>
+<status status="PASS" start="2025-05-26T21:32:10.419615" elapsed="1.885196"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:22.407208" level="INFO">Opening url 'https://www.saucedemo.com/inventory.html'</msg>
+<msg time="2025-05-26T21:32:12.306189" level="INFO">Opening url 'https://www.saucedemo.com/inventory.html'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-20T22:47:22.406479" elapsed="0.701484"/>
+<status status="PASS" start="2025-05-26T21:32:12.305418" elapsed="13.503060"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:47:20.660805" elapsed="2.447454"/>
+<status status="PASS" start="2025-05-26T21:32:10.408022" elapsed="15.402052"/>
 </kw>
 <kw name="Invalid checkout with">
 <kw name="Valid Login" owner="GenericResources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:23.112471" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2025-05-26T21:32:25.824351" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${valid_uname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:23.111912" elapsed="0.297069"/>
+<status status="PASS" start="2025-05-26T21:32:25.822951" elapsed="0.271889"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:23.411903" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2025-05-20T22:47:23.469052" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-05-26T21:32:26.097968" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-05-26T21:32:26.157718" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=password</arg>
 <arg>${valid_pass}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:23.409678" elapsed="0.155606"/>
+<status status="PASS" start="2025-05-26T21:32:26.096463" elapsed="0.238265"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:23.566181" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2025-05-26T21:32:26.336547" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>${login_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:23.565624" elapsed="0.164341"/>
+<status status="PASS" start="2025-05-26T21:32:26.335401" elapsed="0.228462"/>
 </kw>
 <arg>${valid_uname}</arg>
 <arg>${valid_pass}</arg>
-<status status="PASS" start="2025-05-20T22:47:23.110810" elapsed="0.619530"/>
+<status status="PASS" start="2025-05-26T21:32:25.820979" elapsed="0.743343"/>
 </kw>
 <kw name="Verify the product page opens" owner="CheckoutResources">
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:23.777608" level="INFO">Element 'xpath=//div[text()='Sauce Labs Backpack']' contains text 'Sauce Labs Backpack'.</msg>
+<msg time="2025-05-26T21:32:26.647123" level="INFO">Element 'xpath=//div[text()='Sauce Labs Backpack']' contains text 'Sauce Labs Backpack'.</msg>
 <arg>${sauce_lab_bag}</arg>
 <arg>Sauce Labs Backpack</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-05-20T22:47:23.732048" elapsed="0.045998"/>
+<status status="PASS" start="2025-05-26T21:32:26.566299" elapsed="0.081350"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:23.779049" level="INFO">Clicking button 'xpath=//button[@id='add-to-cart-sauce-labs-backpack']'.</msg>
+<msg time="2025-05-26T21:32:26.649085" level="INFO">Clicking button 'xpath=//button[@id='add-to-cart-sauce-labs-backpack']'.</msg>
 <arg>xpath=//button[@id='add-to-cart-sauce-labs-backpack']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:23.778387" elapsed="0.128256"/>
+<status status="PASS" start="2025-05-26T21:32:26.648153" elapsed="0.129899"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:23.907915" level="INFO">Clicking element 'class=shopping_cart_link'.</msg>
+<msg time="2025-05-26T21:32:26.779345" level="INFO">Clicking element 'class=shopping_cart_link'.</msg>
 <arg>class=shopping_cart_link</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:23.907148" elapsed="0.103110"/>
+<status status="PASS" start="2025-05-26T21:32:26.778692" elapsed="0.103400"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-20T22:47:29.012164" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-05-26T21:32:28.883913" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-20T22:47:24.010820" elapsed="5.002571"/>
+<status status="PASS" start="2025-05-26T21:32:26.882518" elapsed="2.002480"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:29.015760" level="INFO">Clicking button 'id=checkout'.</msg>
+<msg time="2025-05-26T21:32:28.888833" level="INFO">Clicking button 'id=checkout'.</msg>
 <arg>id=checkout</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:29.014171" elapsed="0.209978"/>
+<status status="PASS" start="2025-05-26T21:32:28.886207" elapsed="0.175212"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:47:23.730951" elapsed="5.493934"/>
+<status status="PASS" start="2025-05-26T21:32:26.564979" elapsed="2.496750"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:29.226482" level="INFO">Typing text 'sakthi' into text field 'id=first-name'.</msg>
-<arg>id=first-name</arg>
+<msg time="2025-05-26T21:32:29.063189" level="INFO">Typing text 'sakthi' into text field 'xpath=//input[@id="first-name"]'.</msg>
+<arg>xpath=//input[@id="first-name"]</arg>
 <arg>${Firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:29.225426" elapsed="0.171080"/>
+<status status="PASS" start="2025-05-26T21:32:29.062235" elapsed="0.168624"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:29.397516" level="INFO">Typing text 'ravi' into text field 'id=last-name'.</msg>
-<arg>id=last-name</arg>
+<msg time="2025-05-26T21:32:29.232350" level="INFO">Typing text 'ravi' into text field 'xpath=//input[@id="last-name"]'.</msg>
+<arg>xpath=//input[@id="last-name"]</arg>
 <arg>${Lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:29.396780" elapsed="0.165889"/>
+<status status="PASS" start="2025-05-26T21:32:29.231473" elapsed="0.163353"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:29.563952" level="INFO">Typing text '123' into text field 'id=postal-code'.</msg>
-<arg>id=postal-code</arg>
+<msg time="2025-05-26T21:32:29.396191" level="INFO">Typing text '123' into text field 'xpath=//input[@id="postal-code"]'.</msg>
+<arg>xpath=//input[@id="postal-code"]</arg>
 <arg>${Zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:29.563259" elapsed="0.153299"/>
+<status status="PASS" start="2025-05-26T21:32:29.395634" elapsed="0.143466"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:29.717983" level="INFO">Clicking button 'id=continue'.</msg>
-<arg>id=continue</arg>
+<msg time="2025-05-26T21:32:29.540791" level="INFO">Clicking button 'xpath="//input[@id="continue"]"'.</msg>
+<msg time="2025-05-26T21:32:29.809328" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-26T21:32:29.810262" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67168CF45+75717]
+	GetHandleVerifier [0x00007FF67168CFA0+75808]
+	(No symbol) [0x00007FF671458F9A]
+	(No symbol) [0x00007FF671460998]
+	(No symbol) [0x00007FF671463A0C]
+	(No symbol) [0x00007FF671463ADF]
+	(No symbol) [0x00007FF6714AED77]
+	(No symbol) [0x00007FF6714AF77C]
+	(No symbol) [0x00007FF6715025A7]
+	(No symbol) [0x00007FF6714D73BF]
+	(No symbol) [0x00007FF6714FF39C]
+	(No symbol) [0x00007FF6714D7153]
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</msg>
+<arg>xpath="//input[@id="continue"]"</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-20T22:47:29.717368" elapsed="0.188513"/>
+<status status="FAIL" start="2025-05-26T21:32:29.539905" elapsed="0.278121">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67168CF45+75717]
+	GetHandleVerifier [0x00007FF67168CFA0+75808]
+	(No symbol) [0x00007FF671458F9A]
+	(No symbol) [0x00007FF671460998]
+	(No symbol) [0x00007FF671463A0C]
+	(No symbol) [0x00007FF671463ADF]
+	(No symbol) [0x00007FF6714AED77]
+	(No symbol) [0x00007FF6714AF77C]
+	(No symbol) [0x00007FF6715025A7]
+	(No symbol) [0x00007FF6714D73BF]
+	(No symbol) [0x00007FF6714FF39C]
+	(No symbol) [0x00007FF6714D7153]
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
 </kw>
 <if>
 <branch type="IF" condition="'${Firstname}' == ''">
 <kw name="Verify the firstname required message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:47:29.909409" elapsed="0.000705"/>
+<status status="NOT RUN" start="2025-05-26T21:32:29.819177" elapsed="0.000375"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:47:29.906872" elapsed="0.003953"/>
+<status status="NOT RUN" start="2025-05-26T21:32:29.818552" elapsed="0.001207"/>
 </branch>
 <branch type="ELSE IF" condition="'${Lastname}' == ''">
 <kw name="Verify the lastname required message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:47:29.912184" elapsed="0.000572"/>
+<status status="NOT RUN" start="2025-05-26T21:32:29.820417" elapsed="0.000355"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:47:29.911099" elapsed="0.001987"/>
+<status status="NOT RUN" start="2025-05-26T21:32:29.819903" elapsed="0.001073"/>
 </branch>
 <branch type="ELSE IF" condition="'${Zipcode}' == ''">
 <kw name="Verify the zipcode required message" owner="CheckoutResources">
-<status status="NOT RUN" start="2025-05-20T22:47:29.914254" elapsed="0.000465"/>
+<status status="NOT RUN" start="2025-05-26T21:32:29.822173" elapsed="0.000454"/>
 </kw>
-<status status="NOT RUN" start="2025-05-20T22:47:29.913326" elapsed="0.001857"/>
+<status status="NOT RUN" start="2025-05-26T21:32:29.821112" elapsed="0.001733"/>
 </branch>
 <branch type="ELSE">
 <kw name="Verify the success checkout message" owner="CheckoutResources">
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-20T22:47:29.920984" level="INFO">Verifying element 'class=inventory_item_price' contains exact text '$29.99'.</msg>
-<arg>${checkout_success}</arg>
-<arg>$29.99</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-20T22:47:29.920127" elapsed="0.032759"/>
+<status status="NOT RUN" start="2025-05-26T21:32:29.823513" elapsed="0.000713"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:47:29.917445" elapsed="0.035660"/>
-</kw>
-<status status="PASS" start="2025-05-20T22:47:29.915419" elapsed="0.037813"/>
+<status status="NOT RUN" start="2025-05-26T21:32:29.823007" elapsed="0.001687"/>
 </branch>
-<status status="PASS" start="2025-05-20T22:47:29.906770" elapsed="0.046559"/>
+<status status="NOT RUN" start="2025-05-26T21:32:29.818471" elapsed="0.006456"/>
 </if>
 <arg>Firstname=sakthi</arg>
 <arg>Lastname=ravi</arg>
 <arg>Zipcode=123</arg>
-<status status="PASS" start="2025-05-20T22:47:23.109313" elapsed="6.844099"/>
+<status status="FAIL" start="2025-05-26T21:32:25.819075" elapsed="4.006335">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67168CF45+75717]
+	GetHandleVerifier [0x00007FF67168CFA0+75808]
+	(No symbol) [0x00007FF671458F9A]
+	(No symbol) [0x00007FF671460998]
+	(No symbol) [0x00007FF671463A0C]
+	(No symbol) [0x00007FF671463ADF]
+	(No symbol) [0x00007FF6714AED77]
+	(No symbol) [0x00007FF6714AF77C]
+	(No symbol) [0x00007FF6715025A7]
+	(No symbol) [0x00007FF6714D73BF]
+	(No symbol) [0x00007FF6714FF39C]
+	(No symbol) [0x00007FF6714D7153]
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
 </kw>
 <kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-20T22:47:29.955409" elapsed="2.299118"/>
+<status status="PASS" start="2025-05-26T21:32:29.827705" elapsed="2.172403"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:47:29.954517" elapsed="2.300729"/>
+<status status="PASS" start="2025-05-26T21:32:29.826714" elapsed="2.173855"/>
 </kw>
-<status status="PASS" start="2025-05-20T22:47:20.650936" elapsed="11.605257"/>
+<status status="FAIL" start="2025-05-26T21:32:10.403716" elapsed="21.597367">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67168CF45+75717]
+	GetHandleVerifier [0x00007FF67168CFA0+75808]
+	(No symbol) [0x00007FF671458F9A]
+	(No symbol) [0x00007FF671460998]
+	(No symbol) [0x00007FF671463A0C]
+	(No symbol) [0x00007FF671463ADF]
+	(No symbol) [0x00007FF6714AED77]
+	(No symbol) [0x00007FF6714AF77C]
+	(No symbol) [0x00007FF6715025A7]
+	(No symbol) [0x00007FF6714D73BF]
+	(No symbol) [0x00007FF6714FF39C]
+	(No symbol) [0x00007FF6714D7153]
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
 </test>
-<status status="PASS" start="2025-05-20T22:46:38.108971" elapsed="54.152950"/>
+<status status="FAIL" start="2025-05-26T21:26:33.020387" elapsed="358.992393"/>
 </suite>
-<status status="PASS" start="2025-05-20T22:46:38.103388" elapsed="54.166754"/>
+<status status="FAIL" start="2025-05-26T21:26:33.013037" elapsed="359.013716"/>
 </suite>
-<status status="PASS" start="2025-05-20T22:46:38.060507" elapsed="54.212685"/>
+<status status="FAIL" start="2025-05-26T21:26:32.953219" elapsed="359.077001"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Sauce Robot framework" id="s1" pass="4" fail="0" skip="0">Sauce Robot framework</stat>
-<stat name="Tests" id="s1-s1" pass="4" fail="0" skip="0">Sauce Robot framework.Tests</stat>
-<stat name="CheckoutTest" id="s1-s1-s1" pass="4" fail="0" skip="0">Sauce Robot framework.Tests.CheckoutTest</stat>
+<stat name="Sauce Robot framework" id="s1" pass="0" fail="4" skip="0">Sauce Robot framework</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="4" skip="0">Sauce Robot framework.Tests</stat>
+<stat name="CheckoutTest" id="s1-s1-s1" pass="0" fail="4" skip="0">Sauce Robot framework.Tests.CheckoutTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-26T21:31:34.985123" level="WARN">There was an error managing chromedriver (error decoding response body); using driver found in the cache</msg>
+</errors>
+</robot>
+
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</msg>
+<arg>xpath="//input[@id="continue"]"</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-26T21:32:08.015364" elapsed="0.299867">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67168CF45+75717]
+	GetHandleVerifier [0x00007FF67168CFA0+75808]
+	(No symbol) [0x00007FF671458F9A]
+	(No symbol) [0x00007FF671460998]
+	(No symbol) [0x00007FF671463A0C]
+	(No symbol) [0x00007FF671463ADF]
+	(No symbol) [0x00007FF6714AED77]
+	(No symbol) [0x00007FF6714AF77C]
+	(No symbol) [0x00007FF6715025A7]
+	(No symbol) [0x00007FF6714D73BF]
+	(No symbol) [0x00007FF6714FF39C]
+	(No symbol) [0x00007FF6714D7153]
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
+</kw>
+<if>
+<branch type="IF" condition="'${Firstname}' == ''">
+<kw name="Verify the firstname required message" owner="CheckoutResources">
+<status status="NOT RUN" start="2025-05-26T21:32:08.317696" elapsed="0.000739"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T21:32:08.316620" elapsed="0.002232"/>
+</branch>
+<branch type="ELSE IF" condition="'${Lastname}' == ''">
+<kw name="Verify the lastname required message" owner="CheckoutResources">
+<status status="NOT RUN" start="2025-05-26T21:32:08.320187" elapsed="0.000655"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T21:32:08.319179" elapsed="0.002077"/>
+</branch>
+<branch type="ELSE IF" condition="'${Zipcode}' == ''">
+<kw name="Verify the zipcode required message" owner="CheckoutResources">
+<status status="NOT RUN" start="2025-05-26T21:32:08.322440" elapsed="0.000668"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T21:32:08.321524" elapsed="0.002010"/>
+</branch>
+<branch type="ELSE">
+<kw name="Verify the success checkout message" owner="CheckoutResources">
+<status status="NOT RUN" start="2025-05-26T21:32:08.324500" elapsed="0.000506"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T21:32:08.323757" elapsed="0.001534"/>
+</branch>
+<status status="NOT RUN" start="2025-05-26T21:32:08.316509" elapsed="0.008954"/>
+</if>
+<arg>Firstname=sakthi</arg>
+<arg>Lastname=ravi</arg>
+<arg>Zipcode=123</arg>
+<status status="FAIL" start="2025-05-26T21:32:04.199126" elapsed="4.126797">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67168CF45+75717]
+	GetHandleVerifier [0x00007FF67168CFA0+75808]
+	(No symbol) [0x00007FF671458F9A]
+	(No symbol) [0x00007FF671460998]
+	(No symbol) [0x00007FF671463A0C]
+	(No symbol) [0x00007FF671463ADF]
+	(No symbol) [0x00007FF6714AED77]
+	(No symbol) [0x00007FF6714AF77C]
+	(No symbol) [0x00007FF6715025A7]
+	(No symbol) [0x00007FF6714D73BF]
+	(No symbol) [0x00007FF6714FF39C]
+	(No symbol) [0x00007FF6714D7153]
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-26T21:32:08.328695" elapsed="2.689223"/>
+</kw>
+<status status="PASS" start="2025-05-26T21:32:08.327289" elapsed="2.691154"/>
+</kw>
+<status status="FAIL" start="2025-05-26T21:31:56.712707" elapsed="14.306302">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression "//input[@id="continue"]" because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '"//input[@id="continue"]"' is not a valid XPath expression.
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67168CF45+75717]
+	GetHandleVerifier [0x00007FF67168CFA0+75808]
+	(No symbol) [0x00007FF671458F9A]
+	(No symbol) [0x00007FF671460998]
+	(No symbol) [0x00007FF671463A0C]
+	(No symbol) [0x00007FF671463ADF]
+	(No symbol) [0x00007FF6714AED77]
+	(No symbol) [0x00007FF6714AF77C]
+	(No symbol) [0x00007FF6715025A7]
+	(No symbol) [0x00007FF6714D73BF]
+	(No symbol) [0x00007FF6714FF39C]
+	(No symbol) [0x00007FF6714D7153]
+	(No symbol) [0x00007FF6714A0421]
+	(No symbol) [0x00007FF6714A11B3]
+	GetHandleVerifier [0x00007FF67198D71D+3223453]
+	GetHandleVerifier [0x00007FF671987CC2+3200322]
+	GetHandleVerifier [0x00007FF6719A5AF3+3322739]
+	GetHandleVerifier [0x00007FF6716A6A1A+180890]
+	GetHandleVerifier [0x00007FF6716AE11F+211359]
+	GetHandleVerifier [0x00007FF671695294+109332]
+	GetHandleVerifier [0x00007FF671695442+109762]
+	GetHandleVerifier [0x00007FF67167BA59+4825]
+	BaseThreadInitThunk [0x00007FFC77137374+20]
+	RtlUserThreadStart [0x00007FFC7867CC91+33]
+</status>
+</test>
+<status status="FAIL" start="2025-05-26T21:28:59.894154" elapsed="191.148024"/>
+</suite>
+<status status="FAIL" start="2025-05-26T21:28:59.888422" elapsed="191.162525"/>
+</suite>
+<status status="FAIL" start="2025-05-26T21:28:59.827292" elapsed="191.228370"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Sauce Robot framework" id="s1" pass="0" fail="4" skip="0">Sauce Robot framework</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="4" skip="0">Sauce Robot framework.Tests</stat>
+<stat name="CheckoutTest" id="s1-s1-s1" pass="0" fail="4" skip="0">Sauce Robot framework.Tests.CheckoutTest</stat>
 </suite>
 </statistics>
 <errors>
