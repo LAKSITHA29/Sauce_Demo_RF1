@@ -32,6 +32,7 @@ Open the Browser with the URL
 
 Valid Login
     [Arguments]    ${valid_uname}    ${valid_pass}
+    Wait Until Page Contains Element    //input[@id='user-name']    timeout=10s
     Input Text    //input[@id='user-name']    ${valid_uname}
     Input Password    //input[@id='password']    ${valid_pass}
     Click Button    ${login_btn}
